@@ -14,7 +14,7 @@ test: build
 release: build
 	mkdir -p $(RELEASE_ROOT)
 	@go get github.com/mitchellh/gox
-	cd ./cmd/secret-helper && gox -osarch="$(TARGETS)" --output="../../$(RELEASE_ROOT)/artifacts/safe-{{.OS}}-{{.Arch}}" $(GO_LDFLAGS)
+	cd ./cmd/secret-helper && gox -osarch="$(TARGETS)" --output="../../$(RELEASE_ROOT)/artifacts/secret-helper-{{.OS}}-{{.Arch}}" $(GO_LDFLAGS)
 
 install: build
 	mkdir -p $(DESTDIR)/bin
