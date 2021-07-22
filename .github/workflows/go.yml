@@ -27,6 +27,6 @@ jobs:
           tag: ${{ github.ref }}
           draft: false
           prerelease: false
-          artifacts: "artifacts/*"
+          artifacts: "release/artifacts/*"
           token: ${{ secrets.GITHUB_TOKEN }}
 
