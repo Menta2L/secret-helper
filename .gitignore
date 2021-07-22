@@ -1,0 +1,6 @@
+secret-helper*
+cmd/secret-helper/secret-helper*
+release
+ci/credentials.yml
+/vaults
+*.swp

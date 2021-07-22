@@ -11,6 +11,7 @@ require (
 	github.com/jhunt/go-cli v0.0.0-20210225050846-3732873ce073
 	github.com/jhunt/go-envirotron v0.0.0-20191007155228-c8f2a184ad0f
 	github.com/mattn/go-isatty v0.0.13
+	github.com/mitchellh/gox v1.0.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/starkandwayne/goutils v0.0.0-20190115202530-896b8a6904be
 	github.com/tredoe/osutil v1.0.5
