@@ -1,10 +1,9 @@
 name: Go
 
-on:
+on: 
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    tags:
+    - '*'
 
 jobs:
 
@@ -24,7 +23,6 @@ jobs:
     - name: Create Release
       uses: ncipollo/release-action@v1.8.6
       with:
-          tag: ${{ github.ref }}
           draft: false
           prerelease: false
           artifacts: "release/artifacts/*"
